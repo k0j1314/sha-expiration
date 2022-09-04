@@ -3,7 +3,36 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="AppUser">
+      <header className="headerUser">
+        <nav className="navbarUser">
+          <nav className="logopicuserhome">
+            <a href="/homepage">
+              <img className="userHome" src={logo} alt="logo" />
+            </a>
+          </nav>
+          <ul className="nav-menu-home">
+            <li className="nav-item-home">
+              <a href="/" className="nav-link-home">
+                Look at list
+              </a>
+            </li>
+            <li className="nav-item-home">
+              <a href="/" className="nav-link-home">
+                Add to List
+              </a>
+            </li>
+            <li className="nav-item-home">
+              <button className="button-nav-link" onClick={handleLogout}>
+                {" "}
+                Sign Out{" "}
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      {/*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +48,9 @@ function App() {
           Learn React
         </a>
       </header>
+
+
+      */}
     </div>
   );
 }
